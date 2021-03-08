@@ -1,0 +1,5 @@
+main {
+    display: inline-block;
+    direction:rtl;
+    writing-mode:vertical-lr
+}
