@@ -1,5 +1,50 @@
-main {
-    display: inline-block;
-    direction:rtl;
-    writing-mode:vertical-lr
+body{
+    background-color: #191970;
 }
+main .main-div{
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottom{
+    height: 400px;
+    width: 60px;
+    background-color: #299ff;
+}
+.glass-box{
+    height: 87px;
+    width: 100px;
+    background-color: #eee7aa;
+    border-radius: 30px;
+    border:6px solid #ddd155;
+    box-shadow:10px 43px 0 -35px #3c60ff , 0px 33px 0 -25px #7a99ff ,10px -43px 0 -35px #3c60ff , 0px -33px 0 -25px #7a99ff ,0 0 0 10px #ef6248 , 0 0 0 20px #f39f7a, 0 0 0 33px #4ab2aa, 0 0 0 47px #4682b4, 0 0 0 62px #30307f, inset 9px 0px 0 0px white;
+}
+div .glass-box::before{
+    height: 100px;
+    width: 40px;
+    background-color: white;
+    top: 0;
+    left: 0;
+}
+div .glass-box::after{
+    position: absolute;
+    width: 20px;
+    height: 50px;
+    background-color: black;
+    top: 0;
+    left: 0;
+
+}
+.top{
+    position: absolute;
+    left: 45.5%;
+    width: 35px;
+    height: 35px;
+    background-color: #ffa500;
+    background-image: radial-gradient(circle at 40% 60%, rgb(255, 102, 0) 30%, transparent 30%);
+    border-radius: 20px;
+    border-top-right-radius:4px ;
+    transform: rotate(-45deg);
+}
+
