@@ -1,11 +1,33 @@
 body{
     background-color: #191970;
 }
+
 main .main-div{
     height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: ;
+}
+main .padre{
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    gap: 20px 20px;
+    height: 100px;
+    width: 700px;
+}
+
+main .hijo{
+    background-color: #277019;
+}
+main .padrehijo{
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    gap: 20px 20px;
+    background-color: #3c60ff;
+}
+main .hijo2{
+    background-color: tomato;
 }
 .bottom{
     height: 400px;
