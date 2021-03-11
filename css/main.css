@@ -67,13 +67,6 @@ line-height: 2rem;
     text-align: center;
     font-size: 3rem;
 }
-.item8{
-    grid-row: 7/10;
-    grid-column: 2/4;
-    border: 35px solid rgb(78, 76, 97);
-    border-radius: 25px;
-    transform: rotate(45deg);
-}
 .item10{
     grid-row: 6/8;
     grid-column: 7/9;
@@ -95,9 +88,53 @@ line-height: 2rem;
     border-radius: 50%;
 }
 .item11{
-    background: url(/projects.png) no-repeat ; 
-    margin: 50px;
-    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(177, 177, 177);
     grid-column: 3/9;
-    grid-row: 3/6;
+    grid-row: 2/6;
+    overflow: hidden;
+    padding: 10px;
+    color: rgb(29, 29, 29);
+    font-family: sans-serif;
+    background-color: rgb(255, 167, 167);
+    line-height: 22px;
+    margin: 0 0 30px;
 }
+.footer img{
+    display: inline;
+}
+.item11 img{
+    width: 70%;
+    margin: 0 auto;
+    max-height: 290px;
+    object-fit: cover;
+    object-position: center;
+}
+.item11 .header img, .footer img{
+    display: inline-block;
+    width: 30px;
+}
+.header p{
+    display: inline-block;
+    margin: 0  10px;
+}
+.item11 p{
+    margin: 0;
+}
+.footer{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.footer div{
+    display: inline-block;
+}
+.item11 button{
+    background-color: transparent;
+    border: 0px transparent;
+    color: rgb(172, 0, 224);
+    font-weight: 550;
+    padding: 8px 15px;
+} 
