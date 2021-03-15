@@ -5,10 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/login.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
 
     <title>Platzi video</title>
 </head>
 <body>
+    <header>
+
+    </header>
     <main>
         <h2>Inicia Sesión</h2>
         <form action="" class="form">
@@ -16,20 +21,20 @@
                 <input type="email" id="mail" placeholder="Correo" autocomplete="email" required>
             </label>
             <label for="password">
-                <input type="password" id="password" placeholder="contraseña" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
             </label>
         </form>
         <div class="login-last">
-            <input type="submit" value="Iniciar Sesión">
+            <input class="input-button" type="submit" value="Iniciar Sesión">
+            <a href="/">Olvidé mi contraseña XD</a>
             <label for="remember-me" >
                 <span>Recuérdame</span>
                 <input type="checkbox" name="Recuérdame">
-            </label>
-            <a href="/">Olvidé mi contraseña XD</a>
+             </label>
         </div>
         <div class="login-sponsors">
-            <a href="" class="login-g">Inicia sesión con Google</a>
-            <a href="" class="login-t">Inicia sesión con Twitter</a>
+            <a class="input-button" href="" class="login-g">Inicia sesión con Google</a>
+            <a class="input-button" href="" class="login-t">Inicia sesión con Twitter</a>
         </div>
         <p>¿No tienes ninguna cuenta? <a href="">Regístrate</a></p>
     </main>

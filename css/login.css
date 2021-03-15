@@ -1,4 +1,73 @@
 body{
     background-image: linear-gradient(to right bottom, #04d9c4, #00a5bd, #0070a8, #003c7f, #090646);
-    
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: .75rem;
+}
+main{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 50px 10%;
+    margin: 5%;
+    border-radius: 20px;
+}
+main h2{
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+}
+main form input{
+    border: 0px;
+    border-bottom:2px solid white;
+    background-color: transparent;
+    margin: 15px 0;
+    padding: 10px;
+}
+::placeholder{
+    color: white;
+    font-size: .9rem;
+    letter-spacing: .12rem;
+    font-family: 'Montserrat' sans-serif;
+}
+main .login-last{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.input-button{
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    border: 0px;
+    color: white;
+    width: 212px;
+    height: 40px;
+    justify-content: center;
+    margin: 40px 0 20px;
+
+}
+main .login-last input:nth-child(1){
+    background-color: rgba(255, 255, 255, 0.2);
+}
+main .login-last label{display: none;}
+main .login-sponsors {
+    display: flex;
+    flex-direction: column;
+}
+main .login-sponsors a{
+    background-color: white;
+    color: rgb(44, 44, 44);
+}
+main .login-sponsors a:nth-child(1):before{
+    display: inline-block;
+    content:url(something);
+    background-image: url(/img/google.svg);
+    background-size: 20px;
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+
 }
