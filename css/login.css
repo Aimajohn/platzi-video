@@ -1,22 +1,69 @@
+            /*Estilos base y generales*/
 body{
-    background-image: linear-gradient(to right bottom, #04d9c4, #00a5bd, #0070a8, #003c7f, #090646);
     font-family: 'Montserrat', sans-serif;
     color: white;
+    margin: 0;
+}
+.main-container{
+    background-image: linear-gradient(to bottom, #04d9c4, #00a5bd, #0070a8, #003c7f, #090646);;
+    padding: 10px 0 30px;
 }
 a{
     color: white;
     text-decoration: none;
-    font-size: .75rem;
+    font-size: .78rem;
+}
+input{
+    outline: none;
+    color:white;
+    cursor: pointer;
+}
+.input-button{
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    border: 0px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 8px -5px;
+    color: white;
+    height: 40px;
+    justify-content: center;
+    margin: 40px 0 20px;
+    outline: none;
+    width: 212px;
+}
+.input-button:hover{
+    transform: scale(1.05);
+}
+        /*Estilos específicos*/
+header{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #04D9C4;
+    box-sizing: border-box;
+}
+header img{
+    height: 50px;
 }
 main{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
     background-color: rgba(255, 255, 255, 0.2);
-    padding: 50px 10%;
+    padding: 50px 0%;
     margin: 5%;
     border-radius: 20px;
 }
 main h2{
     font-size: 1.8rem;
     margin-bottom: 40px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 main form input{
     border: 0px;
@@ -35,19 +82,6 @@ main .login-last{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 30px;
-}
-.input-button{
-    display: flex;
-    align-items: center;
-    border-radius: 15px;
-    border: 0px;
-    color: white;
-    width: 212px;
-    height: 40px;
-    justify-content: center;
-    margin: 40px 0 20px;
-
 }
 main .login-last input:nth-child(1){
     background-color: rgba(255, 255, 255, 0.2);
@@ -56,18 +90,45 @@ main .login-last label{display: none;}
 main .login-sponsors {
     display: flex;
     flex-direction: column;
+    margin: 50px 0 30px;
 }
 main .login-sponsors a{
     background-color: white;
     color: rgb(44, 44, 44);
+    margin: 10px 10px;
+    padding: 0px 10px;
+}
+main .login-sponsors a:before{
+    background-size: 20px;
+    content:"";
+    height: 20px;
+    margin-right: 10px;
+    width: 20px;
 }
 main .login-sponsors a:nth-child(1):before{
-    display: inline-block;
-    content:url(something);
     background-image: url(/img/google.svg);
-    background-size: 20px;
-    width: 20px;
-    height: 20px;
-    margin: 0 10px;
-
+}
+main .login-sponsors a:nth-child(2):before{
+    background-image: url(/img/twitter.svg);
+}
+main p{
+    font-size: .8rem;
+    text-align: center;
+}
+.underline-feature:hover{
+    text-decoration: underline;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #090646;
+    padding: 10px 30px;
+}
+footer a{
+    margin: 10px 0;
+}
+@media only screen and (min-width:400px){
+    main form input{
+        width: 250px;
+    }
 }
