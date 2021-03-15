@@ -24,10 +24,9 @@ input{
     border-radius: 15px;
     border: 0px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 8px -5px;
-    color: white;
     height: 40px;
     justify-content: center;
-    margin: 40px 0 20px;
+    margin: 40px 0 0px;
     outline: none;
     width: 212px;
 }
@@ -53,16 +52,17 @@ main{
     justify-items: center;
     background-color: rgba(255, 255, 255, 0.2);
     padding: 50px 0%;
-    margin: 5%;
+    margin: 5% ;
     border-radius: 20px;
+    max-width: 900px;
 }
 main h2{
     font-size: 1.8rem;
     margin-bottom: 40px;
 }
 form{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     justify-content: center;
 }
 main form input{
@@ -82,8 +82,9 @@ main .login-last{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 30px;
 }
-main .login-last input:nth-child(1){
+main form .input-button{
     background-color: rgba(255, 255, 255, 0.2);
 }
 main .login-last label{display: none;}
@@ -125,10 +126,13 @@ footer{
     padding: 10px 30px;
 }
 footer a{
-    margin: 10px 0;
+    margin: 10px;
 }
 @media only screen and (min-width:400px){
     main form input{
         width: 250px;
+    }
+    main form .input-button{
+        width: 100%;
     }
 }

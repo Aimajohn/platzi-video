@@ -7,9 +7,16 @@ html{
 .icon{
     height: 30px;
 }
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
 body{
-    background-image: linear-gradient(to right bottom, #04d9c4, #00a5bd, #0070a8, #003c7f, #090646);
-    height: 100vh;
+    background-image: linear-gradient(to bottom, #04d9c4, #00a5bd, #0070a8, #003c7f, #090646);;
+    height: 100%;
     color: white;
     font-family: 'Segoe UI';
     font-size: 1.4rem;
@@ -82,7 +89,7 @@ main article{
     scroll-behavior: smooth;
     scroll-snap-type: mandatory;
     width: 100%;
-
+    padding-top: 50px;
 }
 main article .movie-chart{
     position: relative;
@@ -90,7 +97,7 @@ main article .movie-chart{
     height: 250px;
     min-width: 200px;
     background-color: plum;
-    margin: 70px 10px 50px;
+    margin: 0px 10px 50px;
     padding-bottom: 10px;
     border-radius: 15px;
     scroll-snap-align: center;
@@ -150,4 +157,25 @@ main article .movie-details button:nth-child(2){
     background-image: url(/img/add_white_24dp.svg);
     background-size: contain;
     cursor: pointer;
+}
+main h3{
+    display: block;
+    margin: 30px auto 20px 30px;
+    font-size: 2.5rem;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #090646;
+    padding: 10px 30px;
+}
+footer a{
+    margin: 10px;
+}
+@media only screen and (min-width:700px){
+    footer{
+
+        flex-direction: row ;
+    }
+
 }
